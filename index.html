@@ -11,50 +11,48 @@
 <body>
 
     <div class="wrap">
-    <form id="signUp">
-        <h2>Sign Up</h2>
-        <div class="inputWrap">
-            <input type="text" name="First_Name" placeholder="First name *">
-        </div>
-        <div class="inputWrap">
-            <input type="text" name="Last_Name" placeholder="Last name *">
-        </div>
-        <div class="inputWrap">
-            <input type="email" name="Emal" placeholder="Email *">
-        </div>
-        <div class="inputWrap">
-            <input type="number" name="phone" placeholder="Phone no *">
-        </div>
-        <div class="inputWrap selectwrap ">
-            <select class="country">
-                <option value="">Select country *</option>
-                <option value="India">India</option>
-                <option value="Nepal">Nepal</option>
-                <option value="China">China</option>
-                <option value="Brazil">Brazil</option>
-                <option value="Pakistan">Pakistan</option>
-            </select>
-        </div>
-        <div class="inputWrap">
-            <input type="text" name="Qualification" placeholder="Qualification *">
-        </div>
-        <div class="inputWrap">
-            <input type="password" name="Password" placeholder="Password *">
-        </div>
-        <div class="inputWrap">
-            <input type="password" name="Confirm password" placeholder="Confirm password *">
-        </div>
-        <div class="tncWrap">
-            <input type="checkbox" name="tnc" id="tnc">
-            <p>By submitting this form, I acknowledge that I have read and understand the Privacy Statement.</p>
-        </div>
+        <form id="signUp" >
+            <h2>Sign Up</h2>
+            <div class="inputWrap">
+                <input type="text" name="First_Name" placeholder="First name *">
+            </div>
+            <div class="inputWrap">
+                <input type="text" name="Last_Name" placeholder="Last name *">
+            </div>
+            
+            <div class="inputWrap">
+                <input type="Email" name="Emal" placeholder="Email *" class="mailInput">
+            </div>
 
-        <button class="signUpCta cta">Submit</button>
-        
+            <div class="inputWrap">
+                <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="phone" maxlength="10" class="phoneInput" placeholder="Phone no *" >
+            </div>
 
-    </form>
-</div>
+            <div class="inputWrap selectwrap ">
+                <input type="text" name="City" placeholder="City *">
+            </div>
+            <div class="inputWrap">
+                <input type="text" name="Qualification" placeholder="Qualification *">
+            </div>
+            <div class="inputWrap">
+                <input type="password" name="Password" placeholder="Password *" class="passwordInp">
+            </div>
+            <div class="inputWrap">
+                <input type="password" name="Confirm password" placeholder="Confirm password *" class="ConfirmPass">
+            </div>
+            <div class="tncWrap">
+                <input type="checkbox" name="tnc" id="tnc">
+                <p>By submitting this form, I acknowledge that I have read and understand the Privacy Statement.</p>
+            </div>
 
+            <button class="signUpCta cta">Submit</button>
+
+
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>
